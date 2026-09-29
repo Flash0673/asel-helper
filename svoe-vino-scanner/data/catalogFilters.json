@@ -1,0 +1,788 @@
+{
+  "source": "https://vino-svoe.ru/api/wines/filters",
+  "verifiedAt": "2026-09-24",
+  "filters": {
+    "colors": [
+      {
+        "name": "Белое",
+        "value": "beloe"
+      },
+      {
+        "name": "Красное",
+        "value": "krasnoe"
+      },
+      {
+        "name": "Оранжевое",
+        "value": "oranzhevoe"
+      },
+      {
+        "name": "Розовое",
+        "value": "rozovoe"
+      }
+    ],
+    "sweetness": [
+      {
+        "name": "Брют",
+        "value": "bryut"
+      },
+      {
+        "name": "Полусладкое",
+        "value": "polusladkoe"
+      },
+      {
+        "name": "Полусухое",
+        "value": "polusuhoe"
+      },
+      {
+        "name": "Сладкое",
+        "value": "sladkoe"
+      },
+      {
+        "name": "Сухое",
+        "value": "suhoe"
+      },
+      {
+        "name": "Экстра брют",
+        "value": "ekstra-bryut"
+      }
+    ],
+    "grapes": [
+      {
+        "name": "Августин",
+        "value": "avgustin"
+      },
+      {
+        "name": "Алеатико",
+        "value": "aleatiko"
+      },
+      {
+        "name": "Алиготе",
+        "value": "aligote"
+      },
+      {
+        "name": "Альбильо",
+        "value": "albilo"
+      },
+      {
+        "name": "Амурский Потапенко",
+        "value": "amurskij-potapenko"
+      },
+      {
+        "name": "Антей магарачский",
+        "value": "antej-magarachskij"
+      },
+      {
+        "name": "Арени",
+        "value": "areni"
+      },
+      {
+        "name": "Бастардо",
+        "value": "bastardo"
+      },
+      {
+        "name": "Бастардо Магарачский",
+        "value": "bastardo-magarachskij"
+      },
+      {
+        "name": "Баяншира",
+        "value": "bayanshira"
+      },
+      {
+        "name": "Белые сорта винограда",
+        "value": "belyj-sorta-vinograda"
+      },
+      {
+        "name": "Бианка",
+        "value": "bianka"
+      },
+      {
+        "name": "Блауфранкиш",
+        "value": "blaufrankish"
+      },
+      {
+        "name": "Буковинка",
+        "value": "bukovinka"
+      },
+      {
+        "name": "Бьянка",
+        "value": "byanka"
+      },
+      {
+        "name": "Вердельо",
+        "value": "verdelo"
+      },
+      {
+        "name": "Верментино",
+        "value": "vermentino"
+      },
+      {
+        "name": "Вионье",
+        "value": "vione"
+      },
+      {
+        "name": "Восторг",
+        "value": "vostorg"
+      },
+      {
+        "name": "Гевюрцтраминер",
+        "value": "gevyurcztraminer"
+      },
+      {
+        "name": "Гечеи Заматош",
+        "value": "gechei-zamatosh"
+      },
+      {
+        "name": "Глера",
+        "value": "glera"
+      },
+      {
+        "name": "Голубок",
+        "value": "golubok"
+      },
+      {
+        "name": "Гренаш",
+        "value": "grenash"
+      },
+      {
+        "name": "Грюнер",
+        "value": "gryuner"
+      },
+      {
+        "name": "Декабрьский",
+        "value": "dekabrskij"
+      },
+      {
+        "name": "Достойный",
+        "value": "dostojnyj"
+      },
+      {
+        "name": "Зинфандель",
+        "value": "zinfandel"
+      },
+      {
+        "name": "Изабелла",
+        "value": "izabella"
+      },
+      {
+        "name": "Каберне АЗОС",
+        "value": "kaberne-azos"
+      },
+      {
+        "name": "Каберне Кортис",
+        "value": "kaberne-kortis"
+      },
+      {
+        "name": "Каберне Совиньон",
+        "value": "kaberne-sovinon"
+      },
+      {
+        "name": "Каберне Фран",
+        "value": "kaberne-fran"
+      },
+      {
+        "name": "Кангун",
+        "value": "kangun"
+      },
+      {
+        "name": "Карменер",
+        "value": "karmener"
+      },
+      {
+        "name": "Кефесия",
+        "value": "kefesiya"
+      },
+      {
+        "name": "Кокур",
+        "value": "kokur"
+      },
+      {
+        "name": "Кокур Белый",
+        "value": "kokur-belyj"
+      },
+      {
+        "name": "Коломбар",
+        "value": "kolombar"
+      },
+      {
+        "name": "Корвина",
+        "value": "korvina"
+      },
+      {
+        "name": "Красностоп",
+        "value": "krasnostop"
+      },
+      {
+        "name": "Красностоп Анапский",
+        "value": "krasnostop-anapskij"
+      },
+      {
+        "name": "Красностоп Золотовский",
+        "value": "krasnostop-zolotovskij"
+      },
+      {
+        "name": "Красные сорта винограда",
+        "value": "krasnye-sorta-vinograda"
+      },
+      {
+        "name": "Кумшацкий",
+        "value": "kumshaczkij"
+      },
+      {
+        "name": "Кумшацкий белый",
+        "value": "kumshaczkij-belyj"
+      },
+      {
+        "name": "Левокумский",
+        "value": "levokumskij"
+      },
+      {
+        "name": "мадраса",
+        "value": "madrasa"
+      },
+      {
+        "name": "Мальбек",
+        "value": "malbek"
+      },
+      {
+        "name": "Мальвазия",
+        "value": "malvaziya"
+      },
+      {
+        "name": "Мариновский",
+        "value": "marinovskij"
+      },
+      {
+        "name": "Марсан",
+        "value": "marsan"
+      },
+      {
+        "name": "Марселан",
+        "value": "marselan"
+      },
+      {
+        "name": "Менье",
+        "value": "mene"
+      },
+      {
+        "name": "Мерло",
+        "value": "merlo"
+      },
+      {
+        "name": "Молдова",
+        "value": "moldova"
+      },
+      {
+        "name": "Монтепульчано",
+        "value": "montepulchano"
+      },
+      {
+        "name": "Москато-джалло",
+        "value": "moskato-dzhallo-1"
+      },
+      {
+        "name": "Мурведр",
+        "value": "murvedr"
+      },
+      {
+        "name": "Мускат",
+        "value": "muskat"
+      },
+      {
+        "name": "Мускат Александрийский",
+        "value": "muskat-aleksandrijskij"
+      },
+      {
+        "name": "Мускат Белый",
+        "value": "muskat-belyj"
+      },
+      {
+        "name": "Мускат Блан",
+        "value": "muskat-blan"
+      },
+      {
+        "name": "Мускат Гамбургский",
+        "value": "muskat-gamburgskij"
+      },
+      {
+        "name": "Мускат Джалло",
+        "value": "muskat-dzhallo"
+      },
+      {
+        "name": "Мускат Желтый",
+        "value": "muskat-zheltyj"
+      },
+      {
+        "name": "Мускат Мелкозернистый",
+        "value": "muskat-melkozernistyj"
+      },
+      {
+        "name": "Мускат Оттонель",
+        "value": "muskat-ottonel"
+      },
+      {
+        "name": "Мускат Розовый",
+        "value": "muskat-rozovyj"
+      },
+      {
+        "name": "Мускат Янтарный",
+        "value": "muskat-yantarnyj"
+      },
+      {
+        "name": "Мцване",
+        "value": "mczvane"
+      },
+      {
+        "name": "Мцване Кахетинский",
+        "value": "mczvane-kahetinskij"
+      },
+      {
+        "name": "Мюллер тургау",
+        "value": "myuller-turgau-1"
+      },
+      {
+        "name": "Мюллер-Тургау",
+        "value": "myuller-turgau"
+      },
+      {
+        "name": "Неббиоло",
+        "value": "nebbiolo"
+      },
+      {
+        "name": "Одесский черный",
+        "value": "odesskij-chernyj"
+      },
+      {
+        "name": "Олег",
+        "value": "oleg"
+      },
+      {
+        "name": "Педро Хименес",
+        "value": "pedro-himenes"
+      },
+      {
+        "name": "Первенец Магарача",
+        "value": "pervenecz-magaracha"
+      },
+      {
+        "name": "Петит арвин",
+        "value": "petit-arvin"
+      },
+      {
+        "name": "Пино Блан",
+        "value": "pino-blan"
+      },
+      {
+        "name": "Пино Гри",
+        "value": "pino-gri"
+      },
+      {
+        "name": "Пино Гриджио",
+        "value": "pino-gridzhio"
+      },
+      {
+        "name": "Пино Менье",
+        "value": "pino-mene"
+      },
+      {
+        "name": "Пино Нуар",
+        "value": "pino-nuar"
+      },
+      {
+        "name": "Пино фран",
+        "value": "pino-fran"
+      },
+      {
+        "name": "Пино черный",
+        "value": "pino-chernyj"
+      },
+      {
+        "name": "Пино чёрный (Пино нуар) и Мерло",
+        "value": "pino-chyornyj-pino-nuar-i-merlo"
+      },
+      {
+        "name": "Пино чёрный (Пино нуар) и Сира (Шираз)",
+        "value": "pino-chyornyj-pino-nuar-i-sira-shiraz"
+      },
+      {
+        "name": "Платовский",
+        "value": "platovskij"
+      },
+      {
+        "name": "Плечистик",
+        "value": "plechistik"
+      },
+      {
+        "name": "Подарок Магарача",
+        "value": "podarok-magaracha"
+      },
+      {
+        "name": "Примитиво",
+        "value": "primitivo"
+      },
+      {
+        "name": "Пти Вердо",
+        "value": "pti-verdo"
+      },
+      {
+        "name": "Пти Мансен",
+        "value": "pti-mansen"
+      },
+      {
+        "name": "Пухляковский",
+        "value": "puhlyakovskij"
+      },
+      {
+        "name": "Ребо",
+        "value": "rebo"
+      },
+      {
+        "name": "Рисланер",
+        "value": "rislaner"
+      },
+      {
+        "name": "Рислинг",
+        "value": "risling"
+      },
+      {
+        "name": "Рислинг Рейнский",
+        "value": "risling-rejnskij"
+      },
+      {
+        "name": "Рисус",
+        "value": "risus"
+      },
+      {
+        "name": "Ркацители",
+        "value": "rkacziteli"
+      },
+      {
+        "name": "Ркацители Оранж",
+        "value": "rkacziteli-oranzh"
+      },
+      {
+        "name": "Рубин АЗОС",
+        "value": "rubin-azos"
+      },
+      {
+        "name": "Рубин Голодриги",
+        "value": "rubin-golodrigi"
+      },
+      {
+        "name": "Рубиновый Магарача",
+        "value": "rubinovyj-magaracha"
+      },
+      {
+        "name": "Русан",
+        "value": "rusan"
+      },
+      {
+        "name": "Санджовезе",
+        "value": "sandzhoveze"
+      },
+      {
+        "name": "Саперави",
+        "value": "saperavi"
+      },
+      {
+        "name": "Саперави Северный",
+        "value": "saperavi-severnyj"
+      },
+      {
+        "name": "Сары Пандас",
+        "value": "sary-pandas"
+      },
+      {
+        "name": "Семильон",
+        "value": "semilon"
+      },
+      {
+        "name": "Сенсо",
+        "value": "senso"
+      },
+      {
+        "name": "Серсиаль",
+        "value": "sersial"
+      },
+      {
+        "name": "Сибирьковый",
+        "value": "sibirkovyj"
+      },
+      {
+        "name": "Сильванер",
+        "value": "silvaner"
+      },
+      {
+        "name": "Сира",
+        "value": "sira"
+      },
+      {
+        "name": "Сира (Шираз)",
+        "value": "sira-shiraz"
+      },
+      {
+        "name": "Совиньон",
+        "value": "sovinon"
+      },
+      {
+        "name": "Совиньон Блан",
+        "value": "sovinon-blan"
+      },
+      {
+        "name": "Совиньон Зеленый",
+        "value": "sovinon-zelenyj"
+      },
+      {
+        "name": "Солярис",
+        "value": "solyaris"
+      },
+      {
+        "name": "Станичный",
+        "value": "stanichnyj"
+      },
+      {
+        "name": "Тавквери",
+        "value": "tavkveri"
+      },
+      {
+        "name": "Темпранильо",
+        "value": "tempranilo"
+      },
+      {
+        "name": "Траминер",
+        "value": "traminer"
+      },
+      {
+        "name": "Траминер Розовый",
+        "value": "traminer-rozovyj"
+      },
+      {
+        "name": "Уньи блан",
+        "value": "uni-blan"
+      },
+      {
+        "name": "Фиолетовый ранний",
+        "value": "fioletovyj-rannij"
+      },
+      {
+        "name": "Хихви",
+        "value": "hihvi"
+      },
+      {
+        "name": "Цвайгельт",
+        "value": "czvajgelt"
+      },
+      {
+        "name": "Цвайгельт Таманский",
+        "value": "czvajgelt-tamanskij"
+      },
+      {
+        "name": "Цветочный",
+        "value": "czvetochnyj"
+      },
+      {
+        "name": "Цимлянский черный",
+        "value": "czimlyanskij-chernyj"
+      },
+      {
+        "name": "Цитронный Магарача",
+        "value": "czitronnyj-magaracha"
+      },
+      {
+        "name": "Шабаш",
+        "value": "shabash"
+      },
+      {
+        "name": "Шардоне",
+        "value": "shardone"
+      },
+      {
+        "name": "Шенен Блан",
+        "value": "shenen-blan"
+      },
+      {
+        "name": "Шираз",
+        "value": "shiraz"
+      },
+      {
+        "name": "Эким-Кара",
+        "value": "ekim-kara"
+      }
+    ],
+    "regions": [
+      {
+        "name": "Дагестан",
+        "value": "dagestan"
+      },
+      {
+        "name": "Дальневосточная зона",
+        "value": "dalnevostochnaya-zona"
+      },
+      {
+        "name": "Долина Дона",
+        "value": "dolina-dona"
+      },
+      {
+        "name": "Крым",
+        "value": "krym"
+      },
+      {
+        "name": "Кубань",
+        "value": "kuban"
+      },
+      {
+        "name": "Нижняя Волга",
+        "value": "nizhnyaya-volga"
+      },
+      {
+        "name": "Самара",
+        "value": "samara"
+      },
+      {
+        "name": "Северная Осетия — Алания",
+        "value": "severnaya-osetiya-alaniya"
+      },
+      {
+        "name": "Ставрополье",
+        "value": "region"
+      }
+    ],
+    "dishes": [
+      {
+        "name": "BBQ",
+        "value": "BBQ"
+      },
+      {
+        "name": "Азиатская кухня",
+        "value": "aziatskaya-kuhnya"
+      },
+      {
+        "name": "Блюда из птицы",
+        "value": "poultry"
+      },
+      {
+        "name": "Блюда из рыбы",
+        "value": "blyuda-iz-beloyj-ryby"
+      },
+      {
+        "name": "Брускетты",
+        "value": "brusketty"
+      },
+      {
+        "name": "Выпечка и десерты",
+        "value": "sladkaya-vypechka"
+      },
+      {
+        "name": "Десерты",
+        "value": "deserty"
+      },
+      {
+        "name": "Закуски",
+        "value": "zakuski"
+      },
+      {
+        "name": "Запеченные овощи",
+        "value": "zapechennye-ovoshhi"
+      },
+      {
+        "name": "Кавказская кухня",
+        "value": "kavkazskaya-kuhnya"
+      },
+      {
+        "name": "Кухни народов мира",
+        "value": "kuhni-narodov-mira"
+      },
+      {
+        "name": "Легкие закуски",
+        "value": "legkie-zakuski"
+      },
+      {
+        "name": "Лёгкие закуски",
+        "value": "lyogkie-zakuski"
+      },
+      {
+        "name": "Морепродукты",
+        "value": "moreprodukty"
+      },
+      {
+        "name": "Мороженое",
+        "value": "morozhenoe"
+      },
+      {
+        "name": "Мясное ассорти",
+        "value": "myasnoe-assorti"
+      },
+      {
+        "name": "Мясо и стейки",
+        "value": "meat"
+      },
+      {
+        "name": "Несладкая выпечка",
+        "value": "nesladkaya-vypechka"
+      },
+      {
+        "name": "Овощи гриль",
+        "value": "ovoshhi-gril"
+      },
+      {
+        "name": "Острое",
+        "value": "ostroe"
+      },
+      {
+        "name": "Паста",
+        "value": "pasta"
+      },
+      {
+        "name": "Паштеты",
+        "value": "pashtety"
+      },
+      {
+        "name": "Пицца",
+        "value": "piczcza"
+      },
+      {
+        "name": "Русская кухня",
+        "value": "russkaya-kuhnya"
+      },
+      {
+        "name": "Рыба и морепродукты",
+        "value": "ryba-moreprodukty"
+      },
+      {
+        "name": "Салаты",
+        "value": "salat"
+      },
+      {
+        "name": "Свежие овощи",
+        "value": "svezhie-ovoshhi"
+      },
+      {
+        "name": "Средиземноморская кухня",
+        "value": "sredizemnomorskaya-kuhnya"
+      },
+      {
+        "name": "Сыры",
+        "value": "syr"
+      },
+      {
+        "name": "Устрицы",
+        "value": "ustriczy"
+      },
+      {
+        "name": "Фастфуд",
+        "value": "fastfud"
+      },
+      {
+        "name": "Фруктово-ягодные десерты",
+        "value": "fruktovo-yagodnye-deserty"
+      },
+      {
+        "name": "Фрукты",
+        "value": "frukty"
+      },
+      {
+        "name": "Шоколад",
+        "value": "shokolad"
+      }
+    ]
+  }
+}

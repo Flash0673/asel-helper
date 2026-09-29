@@ -1,0 +1,7 @@
+gigachat==0.2.3
+pandas
+openpyxl
+pydantic
+fastapi
+uvicorn
+python-multipart

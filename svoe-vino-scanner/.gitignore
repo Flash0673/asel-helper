@@ -1,0 +1,10 @@
+node_modules/
+.nuxt/
+.output/
+dist/
+.sites-runtime/
+public/__qa.html
+.env
+.env.*
+!.env.example
+*.log
