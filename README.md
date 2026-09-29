@@ -51,8 +51,6 @@ source .venv/bin/activate
 pip install -r wine_detection/requirements.txt
 ```
 
-Настройте `.env` в соответствии с требованиями backend.
-
 ## Установка frontend
 
 ```bash
@@ -64,6 +62,14 @@ cd ..
 ## Запуск
 
 Рекомендуемый способ — запуск из корня проекта:
+
+### Windows
+
+```powershell
+py run.py
+```
+
+### macOS / Linux
 
 ```bash
 python run.py
