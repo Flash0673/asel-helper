@@ -1,7 +1,9 @@
 import json
+import tempfile
 from pathlib import Path
 
 from gigachat import GigaChat
+from PIL import Image
 
 from config import (
     GIGACHAT_BASE_URL,
@@ -77,12 +79,38 @@ class GigaChatService:
         # Upload
         # ----------------------------------------------------
 
-        with open(image_path, "rb") as image_file:
+        # GigaChat принимает только JPEG, PNG и BMP.
+        # WebP перекодируем в PNG.
+        upload_path = image_path
+        temp_dir = None
 
-            uploaded_file = self.client.upload_file(
-                image_file,
-                purpose="general"
+        if self._needs_upload_conversion(image_path):
+
+            temp_dir = tempfile.TemporaryDirectory(
+                prefix="wine_gigachat_"
             )
+
+            upload_path = (
+                Path(temp_dir.name)
+                / f"{image_path.stem}.png"
+            )
+
+            with Image.open(image_path) as image:
+                image.save(upload_path, format="PNG")
+
+        try:
+
+            with open(upload_path, "rb") as image_file:
+
+                uploaded_file = self.client.upload_file(
+                    image_file,
+                    purpose="general"
+                )
+
+        finally:
+
+            if temp_dir is not None:
+                temp_dir.cleanup()
 
         file_id = uploaded_file.id_
 
@@ -158,6 +186,30 @@ class GigaChatService:
                 data.get("grape_variety")
             ),
         )
+
+    @staticmethod
+    def _needs_upload_conversion(image_path: Path) -> bool:
+        """
+        GigaChat умеет загружать только JPEG, PNG и BMP.
+
+        Формат определяем по сигнатуре содержимого, а не по
+        расширению: WebP часто лежит в файле с именем .png.
+        """
+        with open(image_path, "rb") as image_file:
+
+            header = image_file.read(16)
+
+        if header.startswith(b"\x89PNG\r\n\x1a\n"):  # PNG
+            return False
+
+        if header.startswith(b"\xff\xd8\xff"):  # JPEG
+            return False
+
+        if header.startswith(b"BM"):  # BMP
+            return False
+
+        # WebP и любые другие форматы перекодируем в PNG.
+        return True
 
     @staticmethod
     def _clean_value(value):
