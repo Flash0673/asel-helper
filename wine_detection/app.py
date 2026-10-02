@@ -1,6 +1,7 @@
 import json
 import sys
 from pathlib import Path
+from typing import Optional
 
 from services.gigachat_service import GigaChatService
 from services.wine_catalog import WineCatalog
@@ -12,6 +13,22 @@ class WineDetectionApp:
 
         self.gigachat = GigaChatService()
         self.catalog = WineCatalog()
+
+    def resolve_slug(
+        self,
+        result: dict,
+    ) -> Optional[str]:
+        """
+        Slug для основной рекомендации результата анализа.
+
+        Если вино не найдено в каталоге — возвращает None.
+        """
+        основное = result.get("основное")
+
+        if not основное:
+            return None
+
+        return self.catalog.slug_for_wine(основное)
 
     def process(
         self,

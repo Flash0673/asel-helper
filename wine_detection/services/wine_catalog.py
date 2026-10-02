@@ -169,6 +169,71 @@ class WineCatalog:
 
         return self._row_to_wine(row)
 
+    def slug_for_wine(
+        self,
+        wine: dict,
+    ) -> Optional[str]:
+        """
+        Возвращает slug записи каталога по полям найденного вина.
+
+        Названия в каталоге не уникальны, поэтому кандидатов
+        дополнительно сужаем по остальным распознанным полям.
+        """
+        if not wine or not wine.get("название"):
+            return None
+
+        title = str(wine["название"])
+        matches = self.df[
+            self.df["_normalized_title"]
+            == self.normalize(title)
+        ].copy()
+
+        if matches.empty or "slug" not in matches.columns:
+            return None
+
+        checks = (
+            (MANUFACTURER_COLUMN, wine.get("производитель")),
+            (CATEGORY_COLUMN, wine.get("категория")),
+            (GRAPE_COLUMN, wine.get("виноград")),
+            (STRENGTH_COLUMN, wine.get("крепость")),
+            (REGION_COLUMN, wine.get("регион")),
+            (COLOR_COLUMN, wine.get("цвет")),
+            (TEMPERATURE_COLUMN, wine.get("температура")),
+        )
+
+        for column, expected in checks:
+
+            if (
+                not expected
+                or column not in matches.columns
+                or len(matches) <= 1
+            ):
+                continue
+
+            expected_normalized = (
+                str(expected).strip().lower()
+            )
+
+            narrowed = matches[
+                matches[column].apply(
+                    lambda value:
+                    self.normalize(str(value))
+                ) == expected_normalized
+            ]
+
+            if not narrowed.empty:
+                matches = narrowed
+
+        slug = matches.iloc[0]["slug"]
+
+        if (
+            slug is None
+            or self.normalize(str(slug)) in {"", "nan"}
+        ):
+            return None
+
+        return str(slug)
+
     def find_additional(
         self,
         wine: WineRecommendation,
